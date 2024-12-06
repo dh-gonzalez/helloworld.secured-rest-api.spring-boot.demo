@@ -1,0 +1,24 @@
+{
+    // Save actions : code formatter + organize imports
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "always",
+    },
+    "editor.formatOnSave": true,
+    "[java]": {
+        "editor.tabSize": 4,
+        "editor.detectIndentation": false,
+    },
+    "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
+    // Maven commands
+    "maven.terminal.favorites": [
+        {
+            "alias": "secured-rest-api.spring-boot.demo clean package",
+            "command": "-e clean package",
+        },
+        {
+            "alias": "secured-rest-api.spring-boot.demo clean package -DskipTests",
+            "command": "-e clean package -DskipTests",
+        }
+    ],
+    "java.configuration.updateBuildConfiguration": "interactive"
+}
