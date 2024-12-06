@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: helloworld.secured-rest-api.spring-boot.demo
+  output:
+      ansi:
+        enabled: always
+logging:
+  level:
+    root: INFO
+    org.springframework.web: WARN
+    helloworld.secured_rest_api.spring_boot.demo: DEBUG
