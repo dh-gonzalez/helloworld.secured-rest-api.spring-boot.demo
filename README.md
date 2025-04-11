@@ -72,5 +72,5 @@ Demo of a spring boot application which exposes a secured REST API
 
 [Swagger UI]: https://localhost:8443/swagger-ui/index.html
 [Swagger api-docs]: https://localhost:8443/v3/api-docs
-[Spring Actuator]: https://localhost:8443/actuator
+[Spring Actuator Health]: https://localhost:8443/actuator/health
 [Karate]: https://github.com/karatelabs/karate
