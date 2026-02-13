@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: helloworld.secured-rest-api.spring-boot.demo
+  output:
+      ansi:
+        enabled: always
+server:
+  ssl:
+    enabled: true
+    # The format used for the keystore. It could be set to JKS in case it is a JKS file
+    key-store-type: PKCS12
+    # The path to the keystore containing the certificate
+    key-store: file:/keystore/helloworld-demo-keystore.p12
+    # The password used to generate the certificate
+    key-store-password: password
+    # The alias mapped to the certificate
+    key-alias: helloworld-demo-keystore
+  # HTTPS port
+  port: 8443
+logging:
+  level:
+    root: INFO
+    org:
+      springframework:
+        web: WARN
+        security: WARN
+    helloworld.secured_rest_api.spring_boot.demo: DEBUG
+jwt:
+  secret: S3cr3tK3y4JWT-HS512_uSE$Th1s-K3y-FoR-SecureT0k3nSignatur3
+  # Delay in seconds
+  expiration: 3600 # 1 hour
